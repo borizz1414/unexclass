@@ -73,7 +73,7 @@ export const navigationSocialWork= [
         url:'/labor-social',
         children:[
             {
-            text:'Publiguarne te escucha',
+            text:'unexclass te escucha',
             description:'Ingresa a nuestro grupo',
             img:'assets/img/labor-social1.png',
             url:''

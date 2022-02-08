@@ -13,20 +13,20 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$publiguarne-app-primary: mat-palette($mat-teal, 900);
-$publiguarne-app-accent: mat-palette($mat-teal, 400);
+$unexclass-app-primary: mat-palette($mat-teal, 900);
+$unexclass-app-accent: mat-palette($mat-teal, 400);
 
 // The warn palette is optional (defaults to red).
-$publiguarne-app-warn: mat-palette($mat-red);
+$unexclass-app-warn: mat-palette($mat-red);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$publiguarne-app-theme: mat-light-theme(
+$unexclass-app-theme: mat-light-theme(
   (
     color: (
-      primary: $publiguarne-app-primary,
-      accent: $publiguarne-app-accent,
-      warn: $publiguarne-app-warn,
+      primary: $unexclass-app-primary,
+      accent: $unexclass-app-accent,
+      warn: $unexclass-app-warn,
     ),
   )
 );
@@ -34,7 +34,7 @@ $publiguarne-app-theme: mat-light-theme(
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-@include angular-material-theme($publiguarne-app-theme);
+@include angular-material-theme($unexclass-app-theme);
 
 
 /* INPUTS ANIMATIONS */ 
@@ -91,7 +91,7 @@ input[type="checkbox"]:checked:after {
   border-radius: 20px !important;
 }
 /* BUTTONS */
-.btn-publiguarne-secondary{
+.btn-unexclass-secondary{
   i{
     margin:0px 10px;
   }
@@ -103,7 +103,7 @@ input[type="checkbox"]:checked:after {
   padding: 4px 2px;
   font-family: 'Raleway-Light';
 }
-.btn-publiguarne-primary{
+.btn-unexclass-primary{
   i{
     margin:0px 10px;
   }
