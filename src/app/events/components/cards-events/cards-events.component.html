@@ -1,0 +1,82 @@
+<div class="container-events">
+    <div class="row">
+        <div class="col-xs-2">
+            <h2>{{title}}</h2>
+        </div>
+    </div>
+    <div class="container-cards" fxLayout="row" fxLayoutAlign="space-around start">
+        <div class="card-event"  fxFlex="30">
+            <div class="img-card d-flex j-content-fe" [ngStyle]="{'background': 'url('+a+')'}">
+                <!-- ACTIONS ICONS INPUT -->
+                <div class="icons-actions" *ngIf="actions_icons">
+                    <i class="fas fa-edit" id="edit_card_icon" (click)="sendEvent('Editar')"></i>
+                    <i class="fas fa-trash-alt" id="delete_card_icon"></i>
+                </div>
+                <!-- END  -->
+                <!-- <img  src="assets/img/eventos.png" alt=""> -->
+            </div>
+
+            <div class="description-card">
+                <div class="hour-card">
+                    JUE., 24 de SEP., a las 10:30am
+                </div>
+                <div class="text-description">
+                    VIII Foro Nacional de Voluntariado y Responsabilidad Social
+                </div>
+                <!-- ICON CARD FOOTER INPUT -->
+                <div class="arrow-description d-flex j-content-fe">
+                    <i [class]='icon_footer' (click)="sendEvent('event_footer')"></i>
+                </div>
+            </div>
+        </div>
+        <div class="card-event"  fxFlex="30">
+            <div class="img-card d-flex j-content-fe" [ngStyle]="{'background': 'url('+a+')'}">
+                <!-- ACTIONS ICONS INPUT -->
+                <div class="icons-actions" *ngIf="actions_icons">
+                    <i class="fas fa-edit" id="edit_card_icon"></i>
+                    <i class="fas fa-trash-alt" id="delete_card_icon"></i>
+                </div>
+                <!-- END  -->
+                <!-- <img  src="assets/img/eventos.png" alt=""> -->
+            </div>
+
+            <div class="description-card">
+                <div class="hour-card">
+                    JUE., 24 de SEP., a las 10:30am
+                </div>
+                <div class="text-description">
+                    VIII Foro Nacional de Voluntariado y Responsabilidad Social
+                </div>
+                <!-- ICON CARD FOOTER INPUT -->
+                <div class="arrow-description d-flex j-content-fe">
+                    <i [class]='icon_footer'></i>
+                </div>
+            </div>
+        </div>
+        <div class="card-event"  fxFlex="30">
+            <div class="img-card d-flex j-content-fe" [ngStyle]="{'background': 'url('+a+')'}">
+                <!-- ACTIONS ICONS INPUT -->
+                <div class="icons-actions" *ngIf="actions_icons">
+                    <i class="fas fa-edit" id="edit_card_icon"></i>
+                    <i class="fas fa-trash-alt" id="delete_card_icon"></i>
+                </div>
+                <!-- END  -->
+                <!-- <img  src="assets/img/eventos.png" alt=""> -->
+            </div>
+
+            <div class="description-card">
+                <div class="hour-card">
+                    JUE., 24 de SEP., a las 10:30am
+                </div>
+                <div class="text-description">
+                    VIII Foro Nacional de Voluntariado y Responsabilidad Social
+                </div>
+                <!-- ICON CARD FOOTER INPUT -->
+                <div class="arrow-description d-flex j-content-fe">
+                    <i [class]='icon_footer'></i>
+                </div>
+            </div>
+        </div>
+
+
+    </div>

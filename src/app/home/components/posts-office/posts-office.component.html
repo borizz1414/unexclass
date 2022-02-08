@@ -1,0 +1,79 @@
+<div class="container-posts-office" fxLayout="column" fxLayoutAlign="center center" >
+    <mat-form-field class="input-text-post">
+        <mat-label>¿Qué quieres publicar hoy?</mat-label>
+        <textarea matInput ></textarea>
+        <div class="footer-field d-flex a-items-center j-content-fe">
+            <i class="fas fa-video"></i>
+            <i class="fas fa-camera"></i>
+            <button mat-raised-button color="primary">Publicar</button>
+        </div>
+    </mat-form-field>
+    <div class="container-posts">
+        <mat-card class="post-card">
+            <mat-card-header class="card-header">
+                <div mat-card-avatar class="example-header-image"><img src="assets/img/foto-perfil-4.png" alt=""></div>
+                <mat-card-title class="mat-card-title"><b>Martha Gonzales</b></mat-card-title>
+                <mat-card-subtitle>Agosto 18 a las 2pm</mat-card-subtitle>
+                <div class="menu-post-card"><i [matMenuTriggerFor]="menu" class="fas fa-ellipsis-h"></i>
+                    <mat-menu #menu="matMenu" class="mat-menu-office">
+                      <button mat-menu-item>Reportar publicación</button>
+                    </mat-menu>
+                </div>
+            </mat-card-header>
+            <div class="post-img">
+                <img mat-card-image src="assets/img/post.png" alt="Photo of a Shiba Inu">
+            </div>
+            <mat-card-content>
+                <p>
+                    The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                    A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                    bred for hunting.
+                </p>
+            </mat-card-content>
+            <mat-card-actions>
+                <div class="container-actions d-flex j-content-se">
+                    <div class=" icons-actions like">
+                        <i class="far fa-heart"></i> <b>38 Me gusta</b>
+                    </div>
+                    <div class="icons-actions comments">
+                        <i class="fas fa-comment-dots"></i> <b>11 Comentarios</b>
+                    </div>
+                    <div class="icons-actions share">
+                        <i class="fas fa-share-alt"></i> <b>Compartir</b>
+                    </div>
+                </div>
+            </mat-card-actions>
+        </mat-card>
+        <mat-card class="post-card">
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"><img src="assets/img/foto-perfil-4.png" alt=""></div>
+                <mat-card-title><b>Martha Gonzales</b></mat-card-title>
+                <mat-card-subtitle>Agosto 18 a las 2pm</mat-card-subtitle>
+            </mat-card-header>
+            <div class="post-img">
+                <img mat-card-image src="assets/img/post.png" alt="Photo of a Shiba Inu">
+            </div>
+            <mat-card-content>
+                <p>
+                    The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                    A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                    bred for hunting.
+                </p>
+            </mat-card-content>
+            <mat-card-actions>
+                <div class="container-actions d-flex j-content-se">
+                    <div class=" icons-actions like">
+                        <i class="far fa-heart"></i> <b>38 Me gusta</b>
+                    </div>
+                    <div class="icons-actions comments">
+                        <i class="fas fa-comment-dots"></i> <b>11 Comentarios</b>
+                    </div>
+                    <div class="icons-actions share">
+                        <i class="fas fa-share-alt"></i> <b>Compartir</b>
+                    </div>
+                </div>
+            </mat-card-actions>
+        </mat-card>
+        
+    </div>
+</div>

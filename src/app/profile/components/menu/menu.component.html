@@ -1,0 +1,42 @@
+<div class="container-menu" fxLayout="row" fxLayoutAlign="center center">
+    <div fxLayout="row">
+
+        <div class="item-menu" [class.menu-selected]="isLinkActive('/perfil/'+menu_activated+'/biografia')">
+            <a  [routerLink]="['/perfil/'+menu_activated+'/biografia']"><p>Biografia</p></a>
+        </div>
+        <div class="item-menu" [class.menu-selected]="isLinkActive('/perfil/'+menu_activated+'/productos')">
+            <a  [routerLink]="['/perfil/'+menu_activated+'/productos']"><p>Productos</p></a>
+        </div>
+        <div class="item-menu" [class.menu-selected]="isLinkActive('/perfil/'+menu_activated+'/como-llegar')">
+            <a  [routerLink]="['/perfil/'+menu_activated+'/como-llegar']"><p>Como llegar</p></a>
+        </div>
+        <div class="item-menu" [class.menu-selected]="isLinkActive('/perfil/'+menu_activated+'/comentarios')">
+            <a  [routerLink]="['/perfil/'+menu_activated+'/comentarios']"><p>Comentarios</p></a>
+        </div>
+        <div class="item-menu" [class.menu-selected]="isLinkActive('/perfil/'+menu_activated+'/eventos')">
+            <a  [routerLink]="['/perfil/'+menu_activated+'/eventos']"><p>Eventos</p></a>
+        </div>
+        
+        <div *ngIf="menu_activated !== 'usuario'" class="item-menu" [class.menu-selected]="isLinkActive('/perfil/'+menu_activated+'/anuncios')">
+            <a  [routerLink]="['/perfil/'+menu_activated+'/anuncios']"><p>Anuncios</p></a>
+        </div>
+        <div *ngIf="menu_activated !== 'usuario'" class="item-menu" [class.menu-selected]="isLinkActive('/perfil/'+menu_activated+'/clasificados')">
+            <a  [routerLink]="['/perfil/'+menu_activated+'/clasificados']"><p>Clasificados</p></a>
+        </div>
+        <div *ngIf="menu_activated !== 'usuario'" class="item-menu" [class.menu-selected]="isLinkActive('/perfil/'+menu_activated+'/directorios')">
+            <a  [routerLink]="['/perfil/'+menu_activated+'/directorios']"><p>Directorios</p></a>
+        </div>
+        <div class="item-menu d-flex a-items-center" *ngIf="menu_activated === 'admin'">
+            <a [matMenuTriggerFor]="menu"><p>Más </p></a>
+            <mat-icon [matMenuTriggerFor]="menu">expand_more</mat-icon>
+            <mat-menu #menu="matMenu">
+                <a mat-menu-item routerLink="/perfil/admin/en-vivos">En vivo</a>
+                <a mat-menu-item routerLink="/perfil/admin/podcasts">Podcast</a>
+                <a mat-menu-item routerLink="/perfil/admin/cuentas">Cuentas</a>
+            </mat-menu>
+        </div>
+    
+</div>
+</div>
+
+<br>

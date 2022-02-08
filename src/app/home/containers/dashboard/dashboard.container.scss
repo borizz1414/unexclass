@@ -1,0 +1,58 @@
+@import "../../../../assets/style/vars.scss";
+// CALENDAR
+.calendar-home {
+  margin-top: 10px;
+}
+.header-calendar {
+  padding: 5px;
+  background: #066d6f;
+  color: white;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px 10px 0px 0px;
+
+  i {
+    margin: 0px 20px;
+  }
+}
+.days {
+  display: flex;
+  justify-content: space-between;
+  background: #20b0b3;
+  color: white;
+  padding: 8px;
+}
+.content-calendar {
+  background: #e6e6e6;
+  height: 150px;
+}
+.drawer-container {
+  height: 100vh;
+  border: 0px;
+  width: 100%;
+  background-color: white;
+}
+.example-sidenav-content {
+  background: white;
+}
+.current-page-title-vertical {
+  height: 60px;
+  background-color: $secondary;
+  color: white;
+  width: 100%;
+}
+
+.toggleSidenav {
+  position: absolute;
+  border-radius: 50%;
+  position: absolute;
+  left: 20px;
+  top: 16px;
+  font-size: 1.5em;
+  color:white;
+}
+.container-page{
+  margin:0px 12px;
+  max-width: 900px;
+  // min-width: 900px;
+}

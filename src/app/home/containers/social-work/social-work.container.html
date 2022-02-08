@@ -1,0 +1,79 @@
+<div fxLayout="row">
+  <div fxFlex="100" fxLayout="row" >
+    <!-- HORIZONTAL MODE SIDENAV -->
+    <div class="side-nav" fxHide.lt-md>
+      <app-sidenav [navigation]="navigation"></app-sidenav>
+      <app-classified [navigation]="navigationClassified"></app-classified>
+      <app-classified [navigation]="navigationSocialWork"></app-classified>
+  </div>
+    <mat-drawer-container class="drawer-container" autosize fxShow.gt-md>
+      <mat-drawer #drawer class="example-sidenav" mode="over">
+         <!-- VERTICAL MODE SIDENAV -->
+         <div class="side-nav" fxHide.gt-sm>
+          <app-sidenav [navigation]="navigation"></app-sidenav>
+          <app-classified [navigation]="navigationClassified"></app-classified>
+          <app-classified [navigation]="navigationSocialWork"></app-classified>
+      </div>
+        
+      </mat-drawer>
+
+      <div class="example-sidenav-content">
+          <mat-icon class=" toggleSidenav" (click)="drawer.toggle()" fxHide.gt-sm>menu</mat-icon>
+        <div fxFlex.gt-md="75" fxFlex.lt-md="100"  fxLayout="column"  >
+          <div class="current-page-title-vertical" fxLayout="row" fxLayoutAlign="center center" fxHide.gt-sm>
+            <b>Labor social</b>
+          </div>
+          <div class="container-page">
+            <app-publicity></app-publicity>
+            <app-list-directory></app-list-directory>
+
+          </div>
+          
+      
+        </div>
+        <div fxFlex.gt-sm="25">
+          <app-banner-right></app-banner-right>
+          <!-- <div class="calendar-home" fxHide.sm>
+                  <div class="header-calendar">
+                    <i class="fas fa-chevron-left"></i>
+                    MARZO
+                    <i class="fas fa-chevron-right"></i>
+                  </div>
+                  <div class="days">
+                    <div class="day">
+                      DOM
+                    </div>
+                    <div class="day">
+                      LUN
+                    </div>
+                    <div class="day">
+                      MAR
+                    </div>
+                    <div class="day">
+                      MIE
+                    </div>
+                    <div class="day">
+                      JUE
+                    </div>
+                    <div class="day">
+                      VIE
+                    </div>
+                    <div class="day">
+                      SAB
+                    </div>
+                  </div>
+                  <div class="content-calendar">
+            
+                  </div>
+                </div> -->
+        </div>
+      </div>
+
+    </mat-drawer-container>
+     <!-- <app-sidenav [navigation]="navigation"></app-sidenav>
+         <app-classified [navigation]="navigationClassified"></app-classified>
+        <app-classified [navigation]="navigationSocialWork"></app-classified>   -->
+  </div>
+
+
+</div>

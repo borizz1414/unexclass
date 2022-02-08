@@ -1,0 +1,146 @@
+@import "~src/assets/style/vars.scss";
+mat-card {
+    box-shadow: 0px 0px 5px #00000029;
+    padding: 0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+textarea{
+    height: 150px;
+}
+
+input, textarea{
+    width: 100%;
+    margin:10px 0px;
+}
+
+mat-card:hover{
+    background: $primary;
+    .dollar,
+    .number-price {
+        color: white;
+    }
+    .amonth {
+      color: white;
+    }
+    .level-plan {
+        color: white;
+    }
+    .items-plans {
+        background: $secondary;
+        color: white;
+        border-bottom: 1px solid $primary;
+        
+    }
+    .description-plan {
+        color: white;
+    }
+}
+.mat-form-field, label{
+    font-family: 'Raleway-Medium';
+    width: 90%;
+}
+input[type=tel]:focus,input[type=email]:focus, textarea:focus {
+    border: 1px solid #2d2d2d;
+  }
+  input[type=tel],input[type=email], textarea {
+    box-sizing: border-box;
+    border: 1px solid #d4d4d4;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+  
+.banner {
+  height: 350px;
+  background: url("../../../../assets/img/banner-soporte.png");
+  background-size: cover;
+}
+.content {
+  padding: 40px;
+}
+.title {
+  h1 {
+    font-family: "Raleway-Black";
+    color: white;
+    font-size: 3rem;
+  }
+}
+.container-plans-questions {
+  padding: 0px 100px 0px 100px;
+}
+.questions {
+    margin-bottom: 40px;
+}
+.quiestions-item{
+    background: $secondary;
+    height: 60px;
+    border-radius: 20px;
+    color:white;
+    margin-bottom: 10px;
+    i{
+        font-size: 20px;
+    }
+}
+.title-plans,.support-text,.questions {
+  color: #43425d;
+}
+.level-plan {
+  color: $secondary;
+  b {
+    font-family: "Raleway-Bold";
+  }
+}
+.price-plan {
+  margin: 30px 0px;
+}
+.dollar,
+.number-price {
+  font-size: 5rem;
+  color: $primary;
+}
+.amonth {
+  margin-left: 10px;
+  font-family: "Raleway-Bold";
+  color: $primary;
+}
+.description-plan {
+  color: #2d2d2d;
+}
+.items-plans {
+  background: #f5f6fa;
+  padding: 14px;
+  color: #43425D;
+  border-bottom: 1px solid #e4e4e4;
+}
+.support-text{
+    margin-bottom: 10%;
+}
+.btn-send{
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-family: 'Raleway-Bold';
+    padding: 4px;
+}
+.btn-adquirir{
+    @media (min-width: 350px) {
+      .title {
+        width: 100%;
+        margin: 7.5% 0% 0% 0%;
+      }
+    }
+    font-family: 'Raleway-Bold';
+    border-radius: 20px;
+    width: 90%;
+    margin:30px 0px;
+    margin-left: 5%;
+    padding: 3%;
+ 
+}
+@media (min-width: 992px) {
+  .title {
+    width: 50%;
+    margin: 7.5% 0% 0% 18%;
+  }
+}

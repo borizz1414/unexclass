@@ -1,0 +1,51 @@
+<div class="card">
+    <div class="d-flex j-content-sb header-card">
+    <h2>{{title}}</h2>
+        <button *ngIf="!invitado" mat-raised-button class="btn-Unexclass-secondary" (click)="open_form = !open_form; title='Editar ubicación'">Editar ubicación</button>
+    </div>
+    <div class="form_map" *ngIf="open_form">
+        <div class="header-dialog d-flex a-items-center j-content-fe">
+
+        </div>
+        <!-- <form>-->
+            <div class="row">
+                <div class="col-xs-6 d-flex f-direction-c photo-live">
+                    <mat-form-field class="matform-add-live">
+                        <label for="">Ciudad *</label>
+                        <input type="text" class="input-login-root">
+                    </mat-form-field>
+                          <mat-form-field class="matform-add-live">
+                        <label for="">Dirección *</label>
+                        <input type="text" class="input-login-root">
+                    </mat-form-field>
+                          <mat-form-field class="matform-add-live">
+                        <label for="">Vereda</label>
+                        <input type="text" class="input-login-root">
+                    </mat-form-field>
+                </div>
+                <div class="col-xs-6">
+                    <mat-form-field class="matform-add-live">
+                        <label for="">Región *</label>
+                        <input type="text" class="input-login-root">
+                    </mat-form-field>
+                    <mat-form-field class="matform-add-live">
+                        <label for="">Calle</label>
+                        <input type="text" class="input-login-root">
+                    </mat-form-field>
+                    <mat-form-field class="matform-add-live">
+                        <label for="">Código postal</label>
+                        <input type="text" class="input-login-root">
+                    </mat-form-field>
+                    <div class="btn-save d-flex j-content-fe">
+                        <button mat-raised-button class="btn-Unexclass-primary">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        
+        <!-- <f/orm>-->
+            <p>O escoge un punto en el mapa</p>
+    </div>
+    <div class="map">
+
+    </div>
+    </div>

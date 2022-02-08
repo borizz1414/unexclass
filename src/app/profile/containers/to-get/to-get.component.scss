@@ -1,0 +1,21 @@
+@import "../../admin/shared/add-dialogs/add-classified/add-classified.component.scss";
+.card{
+    padding: 20px;
+    h2{
+        margin:0px;
+    }
+}
+.map{
+    width: 100%;
+    height:  600px;
+    background: #e6e6e6;
+}
+.photo-live{
+    padding-top:0px !important;
+}
+.form_map{
+    padding: 10px;
+}
+.header-card{
+    margin:8px 0px;
+}

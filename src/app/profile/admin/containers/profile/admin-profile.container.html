@@ -1,0 +1,23 @@
+<app-header-profile name_user="Unexclass" avatar="assets/img/logo/logo.png"></app-header-profile>
+<div class="row">
+<div class="col-xs-offset-1 col-xs-8">
+<app-menu menu_activated="admin"></app-menu>
+</div>
+<div class="col-xs-3 d-flex a-items-center">
+<button mat-raised-button class="btn-Unexclass-primary" (click)="editProfile()">Editar perfil</button>
+</div>
+</div>
+
+<div class="row">
+    <div class="col-xs-2">
+<app-banner-right></app-banner-right>
+
+    </div>
+    <div class="col-xs-8">
+    <router-outlet></router-outlet>
+    </div>
+    <div class="col-xs-2">
+<app-banner-right></app-banner-right>
+        
+    </div>
+</div>

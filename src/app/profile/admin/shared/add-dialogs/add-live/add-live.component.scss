@@ -1,0 +1,66 @@
+@import "../../~src/assets/style/vars.scss";
+
+    
+
+h1{
+        font-family: 'Raleway-Bold';
+        margin:0;
+        color:#2D2D2D;
+        
+    }
+.header-dialog{
+    i{
+        color:$secondary;
+        font-size: 18px;
+        cursor:pointer;
+    }
+}
+.photo-live{
+    padding-top: 20px;
+    .img-add-live{
+        img{
+            width: 100%;
+        }
+    }
+}
+.icon-camera{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -40px;
+    margin-right: 8px;
+    i{
+        padding: 10px;
+        background: $primary;
+        border-radius: 50%;
+        color: white;
+        cursor: pointer;
+    }
+}
+::ng-deep .mat-dialog-container{
+    padding: 18px !important;
+    border-radius: 20px  !important;
+  }
+::ng-deep .matform-add-live{
+    font-family: 'Raleway-Regular';
+    p{
+        margin: 5px 0px;
+    font-size: 14px;
+    color: darkgray;
+    }
+    select{
+        width: 100%;
+        margin:8px 0px;
+    }
+    .mat-form-field-wrapper{
+        padding:0px
+    }
+    textarea{
+        width: 92%;
+        margin:8px 0px;
+    }
+    width: 100%;
+    input{
+        width: 100%;
+        margin: 8px 0px;
+    }
+}

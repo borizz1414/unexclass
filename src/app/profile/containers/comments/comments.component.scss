@@ -1,0 +1,58 @@
+@import "~src/assets/style/vars.scss";
+.send-comment-container{
+    background: #F7F7F7;
+    border-radius: 20px;
+    margin:10px 0px;
+    padding: 20px;
+    h3{
+        font-family: 'Raleway-Bold';
+        color:$primary;
+    }
+}
+.textarea-comment{
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px 0px;
+    border: 0;
+    background: #E7E7E7;
+    font-family: 'Raleway-Regular';
+    padding: 4px;
+}
+.calification-stars{
+    i{
+        color:#EBCE00;
+        margin:0px 5px;
+        cursor: pointer;
+    }
+}
+.card{
+    padding: 20px;
+    margin:10px 0px;
+    h2{
+        margin:0px;
+    }
+    p{
+        color:#2D2D2D;
+        
+        margin:5px;
+    }
+    h3{
+        span{
+            font-size: 14px;
+            color:#CBCBCB;
+        }
+        margin:5px;
+    }
+    .icon-star{
+        font-size: 20px;
+        margin-right: 20px;
+        color:#EBCE00;
+        i{
+            margin:0px 5px;
+        }
+    }
+}
+.item-comments{
+    margin:15px;
+}
+

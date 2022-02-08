@@ -1,0 +1,46 @@
+@import "~src/assets/style/vars.scss";
+@import "../../../profile/components/header/header.component.scss";
+.content-dialog{
+    h3{
+        color:$black;
+        font-family: 'Raleway-Bold';
+    }
+    p{
+        color:$black;
+    }
+}
+.fa-times-circle{
+    color:$secondary;
+    cursor: pointer;
+}
+.btn-event{
+    margin:10px;
+    button{
+        padding: 5px;
+    width: 220px;
+    }
+}
+.social-networks {
+    margin-top: 12px;
+    width: 100%; 
+    justify-content: center;
+}
+.icon-fb{
+    background: #1876F2;
+    
+}
+.icon-ig{
+    background: transparent linear-gradient(180deg, #556DE8 0%, #F83843 100%) 0% 0% no-repeat padding-box;
+    
+}
+.icon-telegram{
+    background: #2BA0D9;
+  
+}
+i{
+    color:white;
+}
+#by-event{
+    color:$secondary;
+    font-family: 'Raleway-Bold';
+}

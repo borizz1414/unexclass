@@ -1,0 +1,89 @@
+<div class="card">
+    <div class="d-flex j-content-sb">
+    <h2>Comentarios</h2>
+    </div>
+    <div class="comments">
+        <div class="item-comments d-flex a-items-center">
+            <div class="img-profile">
+                <img src="assets/img/foto-perfil-4.png" alt="">
+            </div>
+            <div class="text-comment">
+                <div class="header-description d-flex j-content-sb">
+                    <h3>Omar Prieto <span>17 Sep 2020</span></h3>
+
+                    <div class="icon-star">
+                        5.0<i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="description-comment">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
+                </div>
+            </div>
+        </div>
+        <div class="item-comments d-flex a-items-center">
+            <div class="img-profile">
+                <img src="assets/img/foto-perfil-4.png" alt="">
+            </div>
+            <div class="text-comment">
+                <div class="header-description d-flex j-content-sb">
+                    <h3>Omar Prieto <span>17 Sep 2020</span></h3>
+
+                    <div class="icon-star">
+                        5.0<i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="description-comment">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
+                </div>
+            </div>
+        </div>
+        <div class="item-comments d-flex a-items-center">
+            <div class="img-profile">
+                <img src="assets/img/foto-perfil-4.png" alt="">
+            </div>
+            <div class="text-comment">
+                <div class="header-description d-flex j-content-sb">
+                    <h3>Omar Prieto <span>17 Sep 2020</span></h3>
+
+                    <div class="icon-star">
+                        5.0<i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="description-comment">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
+                </div>
+            </div>
+        </div>
+        <div class="item-comments d-flex a-items-center">
+            <div class="img-profile">
+                <img src="assets/img/foto-perfil-4.png" alt="">
+            </div>
+            <div class="text-comment">
+                <div class="header-description d-flex j-content-sb">
+                    <h3>Omar Prieto <span>17 Sep 2020</span></h3>
+
+                    <div class="icon-star">
+                        5.0<i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="description-comment">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- SEPARAR COMPONENETE A FOLDER DE USER -->
+    <div class="send-comment-container">
+        <h3>Deja tu calificación</h3>
+        <div class="icon-star calification-stars">
+        <i class="fas fa-star" (click)="eventComment('calification')"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        3/5
+        </div>
+        <textarea class="textarea-comment" rows="10" placeholder="Ingresa tu comentario"></textarea>
+        <button mat-raised-button class="btn-Unexclass-primary" (click)="eventComment('comment')">Enviar comentario</button>
+    </div>

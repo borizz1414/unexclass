@@ -1,0 +1,26 @@
+<div class="header-dialog d-flex a-items-center j-content-sb">
+    <h1 mat-dialog-title>{{title}}  al directorio</h1>
+    <i class="far fa-times-circle" (click)="close()"></i>
+</div>
+<!-- <form>-->
+    <div class="row">
+        <div class="col-xs-12">
+            <mat-form-field class="matform-add-live">
+                <label for="">Titulo *</label>
+                <input type="text" class="input-login-root" placeholder="Ingresa el titulo del directorio">
+            </mat-form-field>
+            <mat-form-field class="matform-add-live">
+                <label for="">Dirección *</label>
+                <input type="text" class="input-login-root" placeholder="Ingresa la dirección de tu directorio">
+            </mat-form-field>
+            <mat-form-field class="matform-add-live">
+                <label for="">Descripción del directorio</label>
+                <textarea type="text" rows="5" class="input-login-root" placeholder="Ingresa una descripción del directorio"></textarea>
+            </mat-form-field>
+            <div class="btn-save d-flex j-content-fe">
+                <button mat-raised-button class="btn-Unexclass-primary">Guardar</button>
+            </div>
+        </div>
+    </div>
+
+<!-- <f/orm>-->

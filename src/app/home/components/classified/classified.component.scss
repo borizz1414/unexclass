@@ -1,0 +1,59 @@
+@import "~src/assets/style/vars.scss";
+.container-group{
+  display: block;
+  .menu-item{
+      p{
+          font-family: 'Raleway-Light';
+      }
+      a{
+          h4{
+              margin: 0;
+              font-family: 'Raleway-Bold';
+              color:$primary;
+          }
+      }
+  }
+}
+img{
+  width: 50px;
+  height: 50px;
+  margin-right: 12px;
+  margin-left: 14px;
+}
+
+.group-item{
+  padding: 5px;
+  a{
+    text-decoration: none;
+    h4{
+
+      color: black;
+    }
+  }
+}
+
+.menu {
+  width: 300px;
+  .menu-item {
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+  h3 {
+    color: $primary;
+    font-family: "Raleway-Bold";
+    margin: 14px;
+  }
+}
+.active-bg {
+  background: $primary;
+ 
+  h3,a>h4 {
+    color: white;
+  }
+}
+@import '../../../shared/components/sidenav/sidenav.component.scss';

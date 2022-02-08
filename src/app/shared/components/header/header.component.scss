@@ -1,0 +1,144 @@
+@import "~src/assets/style/vars.scss";
+header {
+  box-shadow: 0px 3px 6px #00000029;
+}
+nav {
+  background: $primary;
+  height: 64px;
+}
+.items-nav {
+  height: 100%;
+}
+input[type="text"] {
+  background: #08797b;
+  border: 0;
+  width: 80%;
+  border-radius: 10px;
+  padding: 10px 10px;
+  font-family: "Raleway-Light";
+  color: white;
+}
+
+.icon-input {
+  margin-bottom: -32px;
+  mat-icon {
+    z-index: 2;
+  }
+}
+.nav-icons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  padding: 10px;
+  color: white;
+  border-left: 1px solid #08797b;
+  .nav-menu-icon{
+    margin: 0 8px 0 8px;
+    a{
+    text-decoration: none;
+    color: white;
+  }
+}
+  mat-icon {
+    cursor: pointer;
+
+  }
+}
+#logo {
+  cursor: pointer;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  img,
+  p {
+    @media screen and (min-width:1024px) {
+      margin-left: 26px;
+    }
+  }
+  p,
+  mat-icon {
+    color: white;
+  }
+  mat-icon {
+    cursor: pointer;
+  }
+}
+mat-form-field {
+  width: 80%;
+  background: #08797b;
+  padding: 3px 10px;
+  border-radius: 10px;
+  color: white;
+}
+// NG DEEP
+::ng-deep .input-search-header{
+  color: white !important;
+
+ .mat-form-field-infix {
+   span{
+     label{
+         color: white !important;
+     }
+   }
+  border: 0;
+}
+ .mat-form-field-flex {
+  display: flex !important;
+  align-items: center !important;
+}
+ .mat-form-field-underline {
+  height: 0px !important;
+  width: 0px !important;
+}
+ .mat-form-field-wrapper {
+  padding-bottom: 0px !important;
+}
+}
+i{
+  font-size: 22px;
+}
+mat-icon{
+  font-size: 24px;
+}
+::ng-deep  .mat-menu-live{
+  border-radius: 20px;
+  width: 400px;
+  .header-menu-live{
+    background: $secondary;
+    color:white;
+    padding: 5px;
+  }
+  .mat-menu-content{
+    padding:0 !important;
+  }
+  text-align: center;
+  padding: 0;
+  margin: 0;
+
+}
+.item-menu-live{
+  padding: 10px;
+  .description-menu-live{
+    p{
+      margin: 5px;
+    }
+  }
+}
+.icon-search-movil{
+  color: white;
+  margin-left: 18px;
+  background: #08797B;
+  padding: 0.4rem;
+  border-radius: 50%;
+  font-size: 20px;
+  text-align: center;
+}
+@media screen and (max-width:460px){
+
+  .profile{
+    img{
+      width: 32px;
+    }
+  }
+}

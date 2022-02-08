@@ -1,0 +1,40 @@
+<div class="header-dialog d-flex a-items-center j-content-sb">
+    <h1 mat-dialog-title >{{title}} clasificado</h1>
+    <i class="far fa-times-circle" (click)="close()"></i>
+</div>
+<!-- <form>-->
+    <div class="row">
+        <div class="col-xs-4 d-flex f-direction-c photo-live text-a-center">
+            <div class="img-add-live">
+                <img src="assets/img/svg/add-live.svg" alt="">
+            </div>
+            <div class="icon-camera">
+                <i class="fas fa-camera"></i>
+            </div>
+            <h4>Subir imagen del clasificado</h4>
+        </div>
+        <div class="col-xs-8">
+            <mat-form-field class="matform-add-live">
+                <label for="">Titulo *</label>
+                <input type="text" class="input-login-root" placeholder="Ingresa el titulo del clasificado">
+            </mat-form-field>
+            <mat-form-field class="matform-add-live">
+                <label for="">Descripción del clasificado</label>
+                <textarea class="input-login-root" rows="5" placeholder="Ingresa una descripción del clasificado"></textarea>
+            </mat-form-field>
+            <mat-form-field class="matform-add-live">
+                <label for="">¿Como quieres que te contacten?</label><br>
+                <div class="d-flex contact-input-classified">
+                <input type="text" class="input-login-root">
+                <select class="input-login-root">
+                    <option value="">Seleccionar</option>
+                </select>
+            </div>
+            </mat-form-field>
+            <div class="btn-save d-flex j-content-fe">
+                <button mat-raised-button class="btn-Unexclass-primary">Guardar</button>
+            </div>
+        </div>
+    </div>
+
+<!-- <f/orm>-->

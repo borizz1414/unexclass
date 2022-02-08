@@ -1,0 +1,80 @@
+<div class="card">
+    <div class="d-flex j-content-fe" *ngIf="!invitado">
+        <button mat-raised-button class="btn-Unexclass-secondary" (click)="openForm('Subir')"><i class="fas fa-plus"></i>Subir evento</button>
+    </div>
+    <!-- SEPARAR COMPONENTE -->
+    <div class="form_events" *ngIf="open_form">
+        <h2>{{title_form}} evento</h2>
+        <div class="header-dialog d-flex a-items-center j-content-fe">
+
+        </div>
+        <!-- <form>-->
+            <div class="row">
+                <div class="col-xs-6 d-flex f-direction-c photo-live">
+                    <mat-form-field class="matform-add-live">
+                        <label for="">Dirección del correo electrónico *</label>
+                        <input type="text" class="input-login-root" placeholder="Ingresa tu dirección de correo electrónico">
+                    </mat-form-field>
+                          <mat-form-field class="matform-add-live">
+                        <label for="">Nombre completo *</label>
+                        <input type="text" class="input-login-root" placeholder="Ingresa tu nombre completo">
+                    </mat-form-field>
+                    <mat-form-field class="matform-add-live">
+                        <label for="">Numero de identificación *</label><br>
+                        <div class="d-flex contact-input-classified">
+                            <select class="input-login-root">
+                                <option value="">Cedula</option>
+                            </select>
+                        <input type="text" class="input-login-root">
+                    </div>
+                    </mat-form-field>
+                          <mat-form-field class="matform-add-live">
+                        <label for="">Teléfono con WhatsApp *</label>
+                        <input type="text" class="input-login-root" placeholder="Ingresa tu teléfono con WhatsApp">
+                    </mat-form-field>
+                          <mat-form-field class="matform-add-live">
+                        <label for="">Teléfono móvil ó fijo *</label>
+                        <input type="text" class="input-login-root" placeholder="Ingresa tu teléfono móvil ó fijo">
+                    </mat-form-field>
+                    <mat-form-field class="matform-add-live">
+                        <label for="">Ingresa y selecciona el usuario de tu red social</label><br>
+                        <div class="d-flex contact-input-classified">
+                        <input type="text" class="input-login-root">
+                        <select class="input-login-root">
+                            <option value="">Facebook</option>
+                        </select>
+                    <span id="add-contact-profile"><i class="fas fa-plus"></i></span>
+        
+                    </div>
+                    </mat-form-field>
+                    <div class="chips-social">
+                        <div class="item-chips">
+                            <i class="fab fa-twitter"></i> Gaby_fer <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <mat-form-field class="matform-add-live">
+                        <label for="">Descripción del evento *</label>
+                        <textarea type="text" rows="5" class="input-login-root"></textarea>
+                    </mat-form-field>
+                    <mat-form-field class="matform-add-live">
+                        <label for="">Link de inscripción *</label>
+                        <input type="text" class="input-login-root" placeholder="Ingresa el link de inscripción al evento">
+                    </mat-form-field>
+                    <mat-form-field class="matform-add-live">
+                        <label for="">Subir foto ó video del evento *</label>
+                        <input type="file" class="input-login-root">
+                    </mat-form-field>
+                    <div class="btn-save d-flex j-content-fe">
+                        <button mat-raised-button class="btn-Unexclass-primary">{{title_form}} evento</button>
+                    </div>
+                </div>
+            </div>
+        
+        <!-- <f/orm>-->
+            <p>O escoge un punto en el mapa</p>
+    </div>
+    <!-- FIN SEPARAR COMPONENTE -->
+<app-cards-events *ngIf="!open_form" icon_footer="fas fa-arrow-right" [actions_icons]="false" title="Eventos" (event_icon)="getEvent($event)"></app-cards-events>
+</div>

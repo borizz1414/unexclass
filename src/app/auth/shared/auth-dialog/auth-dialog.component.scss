@@ -1,0 +1,27 @@
+@import "~src/assets/style/vars.scss";
+button {
+  width: 100%;
+  color: white;
+  font-family: "Raleway-Light";
+}
+
+.dialog {
+  mat-tab-group {
+    font-size: 14px;
+    text-align: justify;
+    color: #2d2d2d;
+  }
+  .button {
+    margin-top: 20px;
+    width: 100%;
+  }
+  button {
+    width: 100%;
+    color: white;
+    font-family: "Raleway-Light";
+  }
+  h2 {
+    color: $primary;
+    font-family: "Raleway-Bold";
+  }
+}

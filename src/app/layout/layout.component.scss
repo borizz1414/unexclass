@@ -1,0 +1,7 @@
+.container-layout {
+  position: relative;
+  padding-bottom: 64px;
+  @media screen and (max-width: 959px) {
+      // padding-bottom: 200px;
+  }
+}

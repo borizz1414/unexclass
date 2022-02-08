@@ -1,0 +1,59 @@
+@import "~src/assets/style/vars.scss";
+.card-event {
+  // flex:1 1 75%;
+  margin: 15px 0px;
+  min-width: 280px;
+  
+}
+.img-card {
+  height: 172px;
+  width: 100%;
+  background-size: cover !important;
+  background-position: center center !important;
+}
+.icons-actions{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+  i{
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    margin:10px 5px;
+    border-radius: 50%;
+  }
+}
+#edit_card_icon{
+background: $secondary;
+}
+#delete_card_icon{
+background: red;
+}
+
+.container-cards {
+  flex-wrap: wrap;
+}
+.hour-card{
+    color:$secondary;
+}
+.text-description{
+    color: white;
+    margin-top: 5px;
+}
+.description-card {
+  background: $primary;
+  margin-top: -18px;
+  width: 87%;
+  margin-left: 2%;
+  border-radius: 20px;
+  text-align: left;
+  padding: 12px;
+}
+.arrow-description{
+    i{
+        color:$secondary;
+        font-size: 22px;
+        cursor:pointer;
+    }
+}

@@ -1,0 +1,23 @@
+<app-header-profile name_user="BRK Soluciones Estructurales" avatar="assets/img/logo/logo-oficina.png"></app-header-profile>
+<div fxLayout.gt-sm="row" fxLayout="column" class="container-menu-profile">
+<div fxFlex="80" fxFlexOffset="20px">
+<app-menu menu_activated="oficina"></app-menu>
+</div>
+<div fxFlex="20" fxLayoutAlign="center center">
+<button  mat-raised-button class="btn-Unexclass-primary" (click)="editProfile()">Editar perfil</button>
+</div>
+</div>
+
+<div fxLayout="row">
+    <div fxFlex.gt-md="15" fxHide.lt-lg>
+<app-banner-right></app-banner-right>
+
+    </div>
+    <div fxFlex.gt-md="70" fxFlex="100">
+    <router-outlet></router-outlet>
+    </div>
+    <div fxFlex.gt-md="15" fxHide.lt-lg>
+<app-banner-right></app-banner-right>
+        
+    </div>
+</div>

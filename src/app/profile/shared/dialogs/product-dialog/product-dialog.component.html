@@ -1,0 +1,43 @@
+<div class="header-dialog d-flex a-items-center j-content-sb">
+    <h1 mat-dialog-title >{{title}} producto</h1>
+    <i class="far fa-times-circle" (click)="close()"></i>
+</div>
+<!-- <form>-->
+    <div class="row">
+        <div class="col-xs-6 d-flex f-direction-c photo-live text-a-center">
+            foto
+        </div>
+        <div class="col-xs-6">
+            <div class="matform-add-live">
+                <label for="">Nombre del producto *</label>
+                <input type="text" class="input-login-root" placeholder="Ingresa el nombre del producto">
+            </div>
+            <div class="matform-add-live">
+                <label for="">Precio del producto *</label><br>
+                <div class="d-flex contact-input-classified">
+                <input type="text" class="input-login-root">
+                <select class="input-login-root">
+                    <option value="">COP</option>
+                </select>
+
+            </div>
+            </div>
+            <div class="matform-add-live">
+                <label for="">Descripción del producto</label>
+                <textarea class="input-login-root" rows="2" placeholder="Ingresa el precio del producto"></textarea>
+            </div>
+            <div class="matform-add-live">
+                <label for="">Teléfono con WhatsApp *</label>
+                <input type="text" class="input-login-root" placeholder="Ingresa tu teléfono con WhatsApp">
+            </div>
+            <div class="matform-add-live">
+                <label for="">Teléfono móvil ó fijo *</label>
+                <input type="text" class="input-login-root" placeholder="Ingresa tu teléfono móvil ó fijo">
+            </div>
+            <div class="btn-save d-flex j-content-fe">
+                <button mat-raised-button class="btn-Unexclass-primary">Guardar</button>
+            </div>
+        </div>
+    </div>
+
+<!-- <f/orm>-->

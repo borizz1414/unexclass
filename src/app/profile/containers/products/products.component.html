@@ -1,0 +1,7 @@
+<div class="card">
+<div class="d-flex j-content-fe" *ngIf="!invitado">
+    <button mat-raised-button class="btn-Unexclass-secondary" (click)="getEvent('Agregar')"><i class="fas fa-plus"></i>Agregar producto</button>
+</div>
+    <app-cards-events icon_footer="fas fa-shopping-cart" [actions_icons]="true" title="Productos" (event_icon)="getEvent($event)"></app-cards-events>
+
+</div>

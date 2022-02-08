@@ -1,0 +1,40 @@
+<div class="menu d-flex f-direction-c">
+    <ng-container *ngFor="let item of navigation">
+        <mat-accordion *ngIf="item.type != 'link';else elseItemType">
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                                 (closed)="panelOpenState = false">
+              <mat-expansion-panel-header>
+   
+    
+        
+                    <div class="menu-item title-menu" [routerLinkActive]="[item.activeLink]">
+                        <a [routerLink]="item.url">
+                            <h3>{{item.title}}</h3> 
+                        </a>
+                    </div>
+     
+
+              </mat-expansion-panel-header>
+              <div *ngFor="let group of item.children">
+                <div class="container-group">
+                    <div class="menu-item d-flex" [routerLinkActive]="[group.activeLink]">
+                        <img [src]="group.icon" alt="">
+                        <a >
+                            <p>{{group.title}}</p> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </mat-expansion-panel>
+          </mat-accordion>
+          <ng-template #elseItemType>
+            <div class="menu-item title-menu" [routerLinkActive]="[item.activeLink]">
+                <a [routerLink]="item.url">
+                    <h3>{{item.title}}</h3> 
+                </a>
+            </div>
+          </ng-template>
+          
+
+    </ng-container>
+</div>

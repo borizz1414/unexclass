@@ -1,0 +1,40 @@
+@import "../product-dialog/product-dialog.component.scss";
+.product-price{
+    h3{
+        margin:4px;
+        color:$black;
+    }
+    b{
+        font-family: 'Raleway-Black';
+        color:$secondary;
+        font-size: 20px;
+    }
+   
+}
+.description-buy-product{
+    p{
+
+        color:$black;
+        margin:15px 0px;
+        font-size: 16px;
+    }
+    }
+    #text-gray{
+        color:#B0B0B0;
+        font-size: 14px;
+        font-family: 'Raleway-Bold';
+    }
+.btn-save{
+    margin:10px 0px;
+    button{
+        width: 80%;
+        padding: 5px;
+        i{
+            font-size: 22px;
+        }
+    }
+}
+.ws{
+    background: #05D936;
+    color:white;
+}

@@ -1,0 +1,137 @@
+@import "~src/assets/style/vars.scss";
+form {
+  font-family: "Raleway-Medium";
+  padding: 12px;
+}
+
+a{
+  text-decoration: none;
+}
+mat-card-title {
+  font-family: "Raleway-Bold";
+  color: #2d2d2d;
+  text-align: initial;
+  padding: 20px 0px 0px 28px;
+}
+label {
+  margin-bottom: 10px;
+  color: #2d2d2d;
+}
+.input-auth {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #d4d4d4;
+  font-family: "Raleway-Medium";
+}
+.row-container{
+  overflow: auto;
+}
+.submit {
+  button{
+    max-width: 240px;
+    width: 100%;
+    border-radius: 10px !important;
+    font-family: "Raleway-Bold";
+  }
+}
+.card {
+  padding: 0;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  margin:10px 0px;
+  overflow: hidden;
+  box-shadow: 0px 15px 50px #00000029;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 15px 0px;
+}
+.form-login {
+  padding: 0px 28px 0px 28px;
+  margin: 12px;
+}
+.form-remember {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+.form-remember span {
+  margin-left: 5px;
+}
+.forgot-password {
+  a{
+    color: $primary;
+  }
+}
+.submit {
+  margin-top: 30px;
+}
+.register {
+  color: #2d2d2d;
+  align-items: center;
+  margin: 18px 0px;
+}
+.register a {
+  color: $secondary;
+  font-family: "Raleway-Bold";
+  text-decoration: none;
+}
+.social-networks-login {
+  background: $primary;
+  font-family: "Raleway-Regular";
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 28px;
+}
+.social-text {
+  padding: 15px;
+}
+.social-icons img {
+  width: 48px;
+  margin: 0 15px;
+  cursor: pointer;
+}
+.circle {
+  margin-top: -20px;
+  width: 16px;
+  background: white;
+  color: black;
+  font-family: "Raleway-Bold";
+  padding: 14px;
+  border-radius: 65%;
+  box-shadow: 0px 0px 15px #00000029;
+}
+.mat-tab-label {
+  color: darkgray;
+  font-family: "Raleway-Bold";
+  font-size: 1.1rem;
+}
+.mat-tab-label.mat-tab-label-active {
+  color: $secondary;
+}
+.icon-input {
+  margin-bottom: -32px;
+  /* left: -38px; */
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+.icon-eye-off {
+  cursor: pointer;
+  z-index: 2;
+}
+.form-password label {
+  margin-bottom: 16px;
+}
+@media (min-width:350px){
+  .col-xs-10{
+    max-width: 100%;
+  }
+}

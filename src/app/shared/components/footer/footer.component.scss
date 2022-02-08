@@ -1,0 +1,46 @@
+@import "~src/assets/style/vars.scss";
+footer {
+  position: absolute;
+  bottom: 0px;
+  padding: 6px;
+  // z-index: 1;
+  width: 100%;
+  background: $primary;
+  min-height: 64px;
+  color: white;
+}
+#logo {
+  cursor: pointer;
+}
+.social-networks {
+  i {
+    margin: 0px 10px;
+  }
+}
+.icon-phone {
+  margin: 0px 4px;
+}
+
+@media (max-width: 768px) {
+  .container-social-networks{
+    justify-content: center;
+  }
+  .phones-number{
+    justify-content: center;
+  }
+  footer {
+    text-align: center;
+    height: max-content;
+  }
+  .social-networks {
+    justify-content: center;
+  
+    i {
+      margin: 0px 20px;
+      font-size: 20px;
+    }
+  }
+  .icon-phone {
+    margin: 0px 10px;
+  }
+}

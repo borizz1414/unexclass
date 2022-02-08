@@ -1,0 +1,84 @@
+@import '~src/assets/style/vars.scss';
+.card{
+    border-radius: 20px;
+}
+.header-card{
+    margin: 15px;
+}
+.btn-add{
+    width: 15%;
+    button{
+        width: 100%;
+    }
+}
+input{
+    width: 100%;
+}
+.btn-search{
+    margin-left: 10px;
+}
+table{
+    margin:20px 0px;
+    width: 100%;
+    text-align: center;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    td{
+        i{
+            margin:0px 10px;
+            color:$primary;
+            cursor: pointer;
+        }
+        background: $secondary;
+        p{
+            color: white;
+        }
+        
+    }
+    th:first-child{
+        border-radius: 10px 0px 0px 0px;
+    }
+    th:last-child{
+        border-radius: 0px 10px 0px 0px;
+    }
+    th{
+        color:white;
+        font-family: 'Raleway-Bold';
+        padding: 26px 0px;
+        background: $primary;
+
+    }
+}
+::ng-deep .matform-table-crud {
+    color: #C9C9C9 !important;
+    border-radius: 10px;
+    width: 30%;
+    padding: 5px;
+    background: #E6E6E6;
+   .mat-form-field-infix {
+     span{
+       label{
+           color: #C9C9C9 !important;
+       }
+     }
+    border: 0;
+  }
+   .mat-form-field-flex {
+    display: flex !important;
+    align-items: center !important;
+  }
+   .mat-form-field-underline {
+    height: 0px !important;
+    width: 0px !important;
+  }
+   .mat-form-field-wrapper {
+    padding-bottom: 0px !important;
+  }
+  }
+  i{
+    font-size: 22px;
+  }
+  mat-icon{
+    font-size: 24px;
+  }

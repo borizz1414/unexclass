@@ -1,0 +1,16 @@
+@import "../../../admin/shared/add-dialogs/add-classified/add-classified.component.scss";
+#add-contact-profile{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    color:$secondary;
+    font-size: 20px;
+    cursor:pointer;
+}
+.item-chips{
+    width: max-content;
+    background: $secondary;
+    padding: 5px 15px;
+    border-radius: 10px;
+    color: white;
+}

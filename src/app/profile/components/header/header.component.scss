@@ -1,0 +1,90 @@
+@import "~src/assets/style/vars.scss";
+.header-profile{
+    min-height: 250px;
+    background: url('../../../../assets/img/fondo/fondo-login.png');
+background-size: cover;
+background-position: center center;
+
+}
+.info-right{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 15px;
+}
+.img-profile{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    img{
+        width: 100%;
+    }
+}
+.icon-camera-profile{
+    position: absolute;
+    background: $primary;
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 60px;
+    i{
+        color:white;
+    }
+}
+.info-center{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 180px;
+}
+.icons-star{
+    width: 180px;
+    i{
+        font-size: 20px;
+        color:#EBCE00;
+    }
+}
+.name-profile{
+    h2{
+        font-family: 'Raleway-Bold';
+        color: white;
+    }
+}
+.social-networks {
+    margin-top: 12px;
+    @media screen and (max-width:1024px){
+        justify-content: center;
+    }
+    justify-content: flex-end;
+    width: 95%;
+
+  }
+  .icon {
+      
+    color: $secondary;
+    background: $primary;
+  }
+
+  i {
+    cursor: pointer;
+  }
+
+  .icons-items {
+    height: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .icon-ws,
+  .icon {
+    width: 16%;
+    font-size: 30px;
+    padding: 10px 2px;
+    border-radius: 10px;
+    margin: 0px 5px;
+    max-width: 80px;
+  }
+  .icon-ws {
+    color: white;
+    background: #05d936;
+  }

@@ -1,0 +1,38 @@
+<div class="header-dialog d-flex a-items-center j-content-sb">
+    <h1 mat-dialog-title >{{title}} anuncio</h1>
+    <i class="far fa-times-circle" (click)="close()"></i>
+</div>
+<!-- <form>-->
+    <div class="row">
+        <div class="col-xs-4 d-flex f-direction-c photo-live text-a-center">
+            <div class="img-add-live">
+                <img src="assets/img/svg/add-live.svg" alt="">
+            </div>
+            <div class="icon-camera">
+                <i class="fas fa-camera"></i>
+            </div>
+            <h4>Imagen del anuncio</h4>
+        </div>
+        <div class="col-xs-8">
+            <mat-form-field class="matform-add-live">
+                <label for="">Nombre del anuncio *</label>
+                <input type="text" class="input-login-root" placeholder="Ingresa el nombre del titulo">
+            </mat-form-field>
+            <mat-form-field class="matform-add-live">
+                <label for="">URL de aterrizaje *</label>
+                <p>Ingresa la URL donde llegaran los usuarios al presionar sobre tu anuncio</p>
+                <input type="text" class="input-login-root" placeholder="Ingresa la URL">
+            </mat-form-field>
+            <mat-form-field class="matform-add-live">
+                <label for="">Tiempo del anuncio</label><br>
+                <select class="input-login-root">
+                    <option value="">Seleccionar</option>
+                </select>
+            </mat-form-field>
+            <div class="btn-save d-flex j-content-fe">
+                <button mat-raised-button class="btn-Unexclass-primary">Guardar</button>
+            </div>
+        </div>
+    </div>
+
+<!-- <f/orm>-->

@@ -1,0 +1,68 @@
+<div class="container-auth">
+    <div class="row-container row center-xs middle-xs">
+        <div class="col-xs-12 col-sm-7 col-md-6 col-lg-4">
+            <div class="card">
+                <mat-card-title>
+                    Regístrate en Unexclass
+                </mat-card-title>
+                <ng-container>
+                    <form [formGroup]="formRegister" (ngSubmit)="register()" class="form-login" >
+                        <div class="form-control">
+                            <label>Nombre completo *</label>
+                            <input type="text" formControlName="fullname" class="input-login-root"  placeholder="Ingresa tu nombre completo">
+                            <mat-error *ngIf="formRegister.get('fullname').hasError('required') && formRegister.get('fullname').touched">El nombre es obligatorio
+                            </mat-error>
+                        </div>
+                        <div class="form-control">
+                            <label for="username">Usuario ó correo electrónico *</label>
+                            <input type="text" formControlName="email" class="input-login-root"  placeholder="Ingresa tu usuario ó correo electrónico">
+                            <mat-error *ngIf="formRegister.get('email').hasError('required') && formRegister.get('email').touched">El email es obligatorio
+                            </mat-error>
+                            <mat-error *ngIf="formRegister.get('email').hasError('email') && formRegister.get('email').touched">Ingresa un email valido
+                            </mat-error>
+                        </div>
+                        <div class="form-control form-password">
+                            <label for="password">Contraseña *</label>
+                            <div class="icon-input">
+                                <span class="icon-eye-off"><img src="assets/img/svg/icon-eye-off.svg" alt=""></span>
+                            </div>
+                            <input type="password" class="input-login-root"  formControlName="password" placeholder="Ingresa tu contraseña">
+                            <mat-error *ngIf="formRegister.get('password').hasError('required') && formRegister.get('password').touched">La contraseña es obligatoria
+                            </mat-error>
+                        </div>
+                        <div class="form-remember">
+                            <div>
+                                <input type="checkbox">
+                                <span>Acepto <b>las políticas de uso de datos y reglas del negocio.</b></span>
+                            </div>
+                        </div>
+                        <div class="submit">
+                            <button mat-raised-button color="primary" type="submit" [disabled]="!formRegister.valid">Registrarse</button>
+                        </div>
+                        <div class="register">
+                            ¿Ya tienes una cuenta? <a [routerLink]="['/auth']">Ingresa</a>
+                        </div>
+                    </form>
+                    <div class="social-networks-login">
+                        <div class="circle">
+                            ó
+                        </div>
+                        <div class="social-text">
+                            <p>Regístrate con tus plataformas sociales</p>
+                            <div class="social-icons">
+                                <img src="assets/img/svg/google.svg" (click)="signInWithGoogle()">
+                                <img src="assets/img/svg/facebook.svg">
+                                <img src="assets/img/svg/twitter.svg">
+                            </div>
+                            <div class="policy-text">
+                                *Al registrarte con tus plataformas sociales estarás aceptando automáticamente nuestras
+                                políticas de uso de datos y reglas del negocio .
+                            </div>
+                        </div>
+                    </div>
+                </ng-container>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,57 @@
+<header>
+    <nav fxLayout="row">
+
+        <div fxFlex="10">
+            <div class="row center-xs middle-xs items-nav">
+                <div class="col-xs-12">
+                    <img id="logo" src="assets/img/logo/logo.png" (click)="redirectHome()" width="46px" alt="">
+                </div>
+
+            </div>
+        </div>
+        <div fxFlex="40" fxFlex.lt-sm="20" fxLayoutAlign.lt-sm="center center">
+            <div class="row start-xs middle-xs items-nav">
+                    <mat-form-field class="input-search-header" fxHide.lt-sm >
+                        <input type="tel" matInput placeholder="Buscar en Unexclass...">
+                        <mat-icon matSuffix>search</mat-icon>
+
+                    </mat-form-field>
+                    <div class="container-search-movil">
+                        <mat-icon matSuffix fxHide.gt-xs class="icon-search-movil">search</mat-icon>
+                    </div>
+            </div>
+        </div>
+        <div fxFlex="40" fxFlexOffset.gt-md="20" fxFlex.lt-sm="60">
+            <div class="nav-icons">
+                <div class="nav-menu-icon">
+                    <mat-icon [matMenuTriggerFor]="menu">notifications</mat-icon>      
+                    <mat-menu #menu="matMenu" class="mat-menu-live" xPosition="before">
+                      <div class="header-menu-live">
+                         Notificaciones
+                      </div>
+                      <div class="item-menu-live d-flex a-items-center j-content-se">
+                 
+                        <div class="description-menu-live">
+                            <b>Tienes 2 mensajes nuevos</b>
+                        </div>
+                    </div>
+                    </mat-menu>
+                </div>
+                <div class="nav-menu-icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+            </div>
+        </div>
+        <div class="profile" fxFlex="10">
+            <img  src="assets/img/profile.png" alt="">
+            <p [matMenuTriggerFor]="menu_profile" fxHide.lt-lg>BRK</p>
+            <!-- <mat-icon  fxHide.lt-md>expand_more</mat-icon> -->
+            <mat-menu #menu_profile="matMenu">
+                <a mat-menu-item routerLink="/perfil/usuario">Perfil</a>
+                <!-- <a mat-menu-item>Convertirme en Oficina</a> -->
+                <a mat-menu-item (click)="logout()">Cerrar sesión</a>
+            </mat-menu>
+        </div>
+
+    </nav>
+</header>

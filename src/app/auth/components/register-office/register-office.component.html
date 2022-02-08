@@ -1,0 +1,59 @@
+<div class="container-auth">
+    <div class="row-container row center-xs middle-xs">
+        <div class="col-xs-12 col-sm-7 col-md-6 col-lg-4">
+            <div class="card">
+                <mat-card-title>
+                    Registra tu oficina virtual
+                </mat-card-title>
+                <ng-container>
+                    <form class="form-login">
+                        <div class="form-control">
+                            <label for="">Nombre completo *</label>
+                            <input type="text" placeholder="Ingresa tu nombre completo">
+                        </div>
+                        <div class="form-control">
+                            <label for="">Usuario ó correo electrónico *</label>
+                            <input type="text" placeholder="Ingresa tu usuario ó correo electrónico">
+                        </div>
+                        <div class="form-control">
+                            <label for="">Telefono *</label>
+                            <input type="tel" placeholder="Ingresa tu número de teléfono">
+                        </div>
+                        <div class="form-remember">
+                            <div>
+                                <input type="checkbox">
+                                <span>Acepto <b>las políticas de uso de datos y reglas del negocio.</b></span>
+                            </div>
+                        </div>
+                        <div class="submit">
+                            <button mat-raised-button color="primary">Registrarse</button>
+                        </div>
+                        <div class="register">
+                            ¿Ya tienes una cuenta? <a [routerLink]="['/auth/login']"
+                                routerLinkActive="router-link-active">Ingresa</a>
+                        </div>
+                    </form>
+                    <div class="social-networks-login">
+                        <div class="circle">
+                            ó
+                        </div>
+                        <div class="social-text">
+                            <p>Regístrate con tus plataformas sociales</p>
+                            <div class="social-icons">
+                                <img src="assets/img/svg/google.svg">
+                                <img src="assets/img/svg/facebook.svg">
+                                <img src="assets/img/svg/instagram.svg">
+                                <img src="assets/img/svg/twitter.svg">
+                            </div>
+                            <div class="policy-text">
+                                *Al registrarte con tus plataformas sociales estarás aceptando automáticamente nuestras
+                                políticas de uso de datos y reglas del negocio .
+                            </div>
+                        </div>
+                    </div>
+                </ng-container>
+            </div>
+        </div>
+    </div>
+
+</div>

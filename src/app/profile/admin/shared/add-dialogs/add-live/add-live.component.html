@@ -1,0 +1,30 @@
+<div class="header-dialog d-flex a-items-center j-content-sb">
+    <h1 mat-dialog-title >{{title}} transmisión en vivo</h1>
+    <i class="far fa-times-circle" (click)="close()"></i>
+</div>
+<!-- <form>-->
+    <div class="row">
+        <div class="col-xs-4 d-flex f-direction-c photo-live">
+            <div class="img-add-live">
+                <img src="assets/img/svg/add-live.svg" alt="">
+            </div>
+            <div class="icon-camera">
+                <i class="fas fa-camera"></i>
+            </div>
+        </div>
+        <div class="col-xs-8">
+            <mat-form-field class="matform-add-live">
+                <label for="">Titulo de la transmisión *</label>
+                <input type="text" class="input-login-root" placeholder="Ingresa el titulo de la transmisión">
+            </mat-form-field>
+            <mat-form-field class="matform-add-live">
+                <label for="">URL de la trasmisión * *</label>
+                <input type="text" class="input-login-root" placeholder="Ingresa la URL de la transmisión en vivo">
+            </mat-form-field>
+            <div class="btn-save d-flex j-content-fe">
+                <button mat-raised-button class="btn-Unexclass-primary">Guardar</button>
+            </div>
+        </div>
+    </div>
+
+<!-- <f/orm>-->
